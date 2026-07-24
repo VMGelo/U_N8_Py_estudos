@@ -3,9 +3,8 @@ from pprint import pprint
 
 nome = input("Digite o nome para pesquisa:\n")
 url = f"https://servicodados.ibge.gov.br/api/v2/censos/nomes/{nome}"
-
 params = {
-    "localidade":33 #RJ
+    "localidade": 41
 }
 response = requests.get(url, params=params)
 
